@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FECreditCard", "FECreditCard.csproj", "{D7381DF9-9090-43C1-B71C-96C84D5D844D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7381DF9-9090-43C1-B71C-96C84D5D844D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7381DF9-9090-43C1-B71C-96C84D5D844D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7381DF9-9090-43C1-B71C-96C84D5D844D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7381DF9-9090-43C1-B71C-96C84D5D844D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E9E2019-88C4-4DF7-A539-E4B5A5AA14D0}
+	EndGlobalSection
+EndGlobal
