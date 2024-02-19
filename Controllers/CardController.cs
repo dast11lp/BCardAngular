@@ -23,7 +23,19 @@ namespace FECreditCard.Controllers
     {
       try
       {
-        var cardList = await _context.CreditCards.ToListAsync();
+        //var cardList = await _context.CreditCards.ToListAsync();
+        //var cardList = await _context.CreditCards.Include(c => c.BankAccount).ToListAsync();
+         var cardList = await _context.CreditCards
+            .Select(c => new 
+            {
+                c.Id,
+                c.Holder,
+                c.cardNumber,
+                c.DueDate,
+                c.cvv,
+                BankAccountId = c.BankAccount != null ? c.BankAccount.Id : (int?)null
+            })
+            .ToListAsync();
         return Ok(cardList);
       }
       catch (Exception ex)
@@ -31,15 +43,7 @@ namespace FECreditCard.Controllers
         return BadRequest(ex.Message);
       }
     }
-    /*
-    // GET api/<CardController>/5
-    [HttpGet("{id}")]
-    public string Get(int id)
-    {
-      return "value";
-    }*/
-
-    // POST api/<CardController>
+    
     [HttpPost]
     public async Task<IActionResult> Post([FromBody] CreditCard creditCard)
     {

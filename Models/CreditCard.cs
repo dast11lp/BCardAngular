@@ -20,5 +20,7 @@ namespace FECreditCard.Models
     [Required]
     [RegularExpression(@"[0-9]{3}")]
     public string cvv { get; set; }
-  }
+
+    public BankAccount? BankAccount { get; set; }
+    }
 }
