@@ -271,3 +271,4 @@ D:\Documentos\Cursos\Angular\BECreditCard\obj\Debug\net8.0\refint\FECreditCard.d
 D:\Documentos\Cursos\Angular\BECreditCard\obj\Debug\net8.0\FECreditCard.pdb
 D:\Documentos\Cursos\Angular\BECreditCard\obj\Debug\net8.0\FECreditCard.genruntimeconfig.cache
 D:\Documentos\Cursos\Angular\BECreditCard\obj\Debug\net8.0\ref\FECreditCard.dll
+D:\Documentos\Cursos\Angular\BECreditCard\obj\Debug\net8.0\FECreditCard.sourcelink.json

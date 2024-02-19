@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FECreditCard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e219739f0861bec42671f4e6ef222a93c59df34")]
 [assembly: System.Reflection.AssemblyProductAttribute("FECreditCard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FECreditCard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

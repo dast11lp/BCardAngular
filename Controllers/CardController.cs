@@ -43,9 +43,6 @@ namespace FECreditCard.Controllers
     [HttpPost]
     public async Task<IActionResult> Post([FromBody] CreditCard creditCard)
     {
-      System.Diagnostics.Debug.WriteLine("holaaa");
-
-      System.Diagnostics.Debug.WriteLine("holaaa");
       try
       {
         _context.CreditCards.Add(creditCard);
