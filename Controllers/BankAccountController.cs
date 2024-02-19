@@ -38,5 +38,24 @@ namespace FECreditCard.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GEtBankAccount(int Id)
+        {
+            try
+            {
+                var banckAccount = await _context.BankAccount.FindAsync(Id);
+                if (banckAccount == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(banckAccount);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

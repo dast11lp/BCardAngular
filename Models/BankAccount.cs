@@ -11,11 +11,18 @@ namespace FECreditCard.Models
         public string AccountNumber { get; set; }
 
         [Required]
+        [DisplayFormat(DataFormatString = "{0:C}", ApplyFormatInEditMode = true)]
         public decimal Balance { get; set; }
 
         public int? CreditCardId { get; set; }
 
         [JsonIgnore]
         public CreditCard? CreditCard { get; set; }
+
+        public BankAccount()
+        {
+            AccountNumber = Guid.NewGuid().ToString();
+        }
     }
 }
+
