@@ -19,7 +19,7 @@ namespace FECreditCard.Controllers
         [HttpPost]
         public async Task<IActionResult> AddBankAccountToCard(int cardId, BankAccount bankAccount)
         {
-            try 
+            try
             {
                 var creditCard = await _context.CreditCards.FindAsync(cardId);
 
@@ -39,12 +39,12 @@ namespace FECreditCard.Controllers
             }
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GEtBankAccount(int Id)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetBankAccount(int id)
         {
             try
-            {
-                var banckAccount = await _context.BankAccount.FindAsync(Id);
+            {   
+                var banckAccount = await _context.BankAccount.FindAsync(id);
                 if (banckAccount == null)
                 {
                     return NotFound();
